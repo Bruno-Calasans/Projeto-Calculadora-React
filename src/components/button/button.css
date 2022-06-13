@@ -1,0 +1,70 @@
+
+@font-face {
+    font-family: 'RobotoMono-bold';
+    src: url('../../assets/fonts/RobotoMono-Bold.ttf');
+}
+
+:root {
+
+    --defaultColor: lightgrey;
+    --defaultActive: rgba(211, 211, 211, 0.5);
+    --operationColor: lightcoral;
+    --operationActive: rgba(240, 128, 128, 0.5);
+    
+}
+
+.btn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--defaultColor);
+    border: 1px solid black;
+
+    cursor: pointer;
+    outline: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+
+    font-family: 'RobotoMono-bold';
+    font-size: 30px;
+    
+}
+
+.btn:hover {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.btn:active {
+    background-color: var(--defaultActive);
+}
+
+/* ocupa 2 colunas */
+.btn.double {
+    grid-column: span 2;
+}
+
+/* ocupa 3 colunas */
+.btn.triple {
+    grid-column: span 3;
+}
+
+/* botão que faz alguma operação na calculadora */
+.btn.operation {
+    background-color: var(--operationColor);
+    color: white;
+}
+
+.btn.operation:active {
+    background-color: var(--operationActive);
+}
+
+.material-icons {
+    font-size: 32px;
+}

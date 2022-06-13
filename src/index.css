@@ -1,0 +1,32 @@
+
+@font-face {
+    font-family: 'RobotoMono-thin';
+    src: url('./assets/fonts/RobotoMono-Thin.ttf');
+}
+
+:root {
+    --defaultFonts: 'RobotoMono-thin', 'monospace';
+    --gradient1: to right, #1D4350, #A43931;
+    --gradient2: to right,  #000000, #434343;
+    --gradient3: to right,  #4B79A1, #283E51;
+    --gradient4: to right,  #114357, #F29492;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--defaultFonts);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+
+    color: snow;
+    background-image: linear-gradient(var(--gradient4));
+}
+

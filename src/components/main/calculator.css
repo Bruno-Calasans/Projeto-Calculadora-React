@@ -1,0 +1,20 @@
+
+.calculator {
+  
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 70px repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    /* oculta tudo que sair do calculator */
+    overflow: hidden;
+  
+    width: 300px;
+    height: 350px;
+    margin: auto;
+
+    background-color: rgba(0, 0, 0, 0.516);
+    border: 2px solid black;
+    border-radius: 4px;
+}
